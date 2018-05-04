@@ -76,7 +76,7 @@ namespace thlvn
            {
                date[2] = "3";
            }
-           else if (date[2].Equals("Bốn"))
+           else if (date[2].Equals("Tư"))
            {
                date[2] = "4";
            }
@@ -118,12 +118,12 @@ namespace thlvn
         private void button5_Click(object sender, EventArgs e)
         {
             String a = chuyen(dateTimePicker1.Text);
-            String b = chuyen(dateTimePicker2.Text);
+            String b = chuyen(dateTimePicker2.Text);      
             conn.Open();
-            SqlDataAdapter sda = new SqlDataAdapter("update dbo.Qlkh set tenkh='" + textBox1.Text + "',ngaysinh='" + a + "',sophong='" + textBox3.Text + "',giaphong='" + textBox4.Text + "',ngayden='" + b + "' where cmnd='" + textBox2.Text +"'", conn);
-            sda.SelectCommand.ExecuteNonQuery();
+            SqlDataAdapter sda = new SqlDataAdapter("update dbo.Qlkh set tenkh='" + textBox1.Text + "',ngaysinh='" + a + "',sophong='" + textBox3.Text + "',giaphong=" + textBox4.Text + ",ngayden='" + b + "' where cmnd='" + textBox2.Text +"'", conn);
+            sda.SelectCommand.ExecuteNonQuery();//cái này cũng vậy, chỗ giá phòng nó phải có giá trị số thì mới dc.nảy ở nhà nhạp số mà nó vẫn bị ấy chứ.có cần mình code thêm phần  nếu chưa nhạp nó yêu cầu nhạp k
             conn.Close();
-            MessageBox.Show(a+"  "+b);
+            MessageBox.Show("Sửa thành công");
         }
         private void toolStripTextBox1_Click(object sender, EventArgs e)
         {
@@ -136,7 +136,7 @@ namespace thlvn
             String b = chuyen(dateTimePicker2.Text);
             conn.Open();
             SqlDataAdapter sda = new SqlDataAdapter("insert into dbo.Qlkh (tenkh,ngaysinh,cmnd,sophong,giaphong,ngayden) values ('" + textBox1.Text + "','" + a + "','" + textBox2.Text + "','" + textBox3.Text + "'," + textBox4.Text + ",'" +b +"')", conn);
-            sda.SelectCommand.ExecuteNonQuery();
+            sda.SelectCommand.ExecuteNonQuery();// sửa lại bắt buộc llaf số mặc định là 0 nếu ko là sai
             conn.Close();
             MessageBox.Show("Đăng Ký Thành Công!!!!");
         }
