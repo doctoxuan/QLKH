@@ -1,0 +1,11 @@
+D:\Học Kỳ 2\thlvn\thlvn\bin\Debug\thlvn.exe.config
+D:\Học Kỳ 2\thlvn\thlvn\bin\Debug\thlvn.exe
+D:\Học Kỳ 2\thlvn\thlvn\bin\Debug\thlvn.pdb
+D:\Học Kỳ 2\thlvn\thlvn\obj\Debug\thlvn.csprojResolveAssemblyReference.cache
+D:\Học Kỳ 2\thlvn\thlvn\obj\Debug\thlvn.Form1.resources
+D:\Học Kỳ 2\thlvn\thlvn\obj\Debug\thlvn.Properties.Resources.resources
+D:\Học Kỳ 2\thlvn\thlvn\obj\Debug\thlvn.csproj.GenerateResource.Cache
+D:\Học Kỳ 2\thlvn\thlvn\obj\Debug\thlvn.exe
+D:\Học Kỳ 2\thlvn\thlvn\obj\Debug\thlvn.pdb
+D:\Học Kỳ 2\thlvn\thlvn\obj\Debug\thlvn.Form2.resources
+D:\Học Kỳ 2\thlvn\thlvn\obj\Debug\thlvn.Form3.resources
