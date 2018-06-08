@@ -28,7 +28,7 @@ namespace thlvn
                 conn.Open();
                 string tk= txtTaiKhoan.Text;
                 string mk = txtMatKhau.Text;
-                string sql = "select * from Qlks where TaiKhoan='" + tk + "' and MatKhau='" + mk + "'";
+                string sql = "select * from Qlks1 where TaiKhoan='" + tk + "' and MatKhau='" + mk + "'";
                 SqlCommand cmd = new SqlCommand(sql, conn);
                 SqlDataReader dta = cmd.ExecuteReader();
                 if(dta.Read()==true)
